@@ -10,6 +10,7 @@
 <li><a href="{{route("article.get", ["id"=>$article->id])}}">{{$article->title}}</a></li>
  @endforeach -->
 
+
 </ul>
 <form method="POST" action="{{route("article.post")}}">
   <div class="form-group">
@@ -42,3 +43,20 @@ $(document).ready(function(){
 </script>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+ <html>
+ <head>
+ <nav> <a href='{{route('category.get'}}' </nav>
+     <link href="{{asset('bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+
+      </head>
+      <body>
+          
+      </body>
+      
+           
+    
+ </html>
+

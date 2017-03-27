@@ -1,0 +1,52 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2017-03-27, 09:37:05
+    Author     : student
+*/
+body {
+    background: url('../image1.jpeg') no-repeat fixed;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+}
+
+.main_section {
+    margin: 30px auto;
+    width: 70vw;
+    background: white;
+    text-align: initial;
+    padding: 15px;
+    opacity: .9;
+}
+
+.main_menu {
+    margin: 0 auto;
+    width: 70vw;
+    background: white;
+    text-align: initial;
+    padding: 15px;
+    background: transparent;
+}
+
+.main-menu ul {
+    list-style: none;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background: white;
+    padding: 15px 0;
+    
+}
+
+
+.main-menu ul li:hover {
+    opacity: .7;
+    
+}
