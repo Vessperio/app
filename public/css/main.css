@@ -7,29 +7,34 @@ and open the template in the editor.
     Created on : 2017-03-27, 09:37:05
     Author     : student
 */
+html.body {
+    
+}
+
 body {
     background: url('../image1.jpeg') no-repeat fixed;
     background-size: cover;
-    text-align: center;
-    margin: 0;
 }
 
 .main_section {
-    margin: 30px auto;
-    width: 70vw;
     background: white;
     text-align: initial;
     padding: 15px;
     opacity: .9;
 }
 
+button {
+    border-radius: 0 !important;
+}
+
 .main_menu {
-    margin: 0 auto;
-    width: 70vw;
     background: white;
-    text-align: initial;
+    text-align: center;
     padding: 15px;
-    background: transparent;
+}
+
+.main_menu:hover {
+    background:rgba(255,255,255,.5);
 }
 
 .main-menu ul {
@@ -50,3 +55,7 @@ body {
     opacity: .7;
     
 }
+
+@media screen and (max-width:900px) { body {
+    margin: 0;
+} }

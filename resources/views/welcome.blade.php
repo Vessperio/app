@@ -47,21 +47,39 @@
 <!DOCTYPE html>
  <html>
  <head>
-     <meta charset="UTF-9">
-     <link href="{{asset('bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link href="{{asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
  <link rel='stylesheet' href="{{asset('css/main.css') }}">
+ <link href="css/bootstrap.min.css" rel="stylesheet">
       </head>
-      <body>
+      <body class="container-fluid">
          
  @include('menu')
         
-     <section class='main_section'>
-         <header> </header>
          
-         <article>
+         <header> </header>
+         <div class="row">
+          
+           <div class="col-sm-2"></div>
+           <div class="col-sm-8">
+               <section class='main_section'>
+         <article class="main_section">
              @yield('content')
          </article>
-     </section>
+               </section>
+
+          </div>
+           <div class="col-sm-2"></div>
+           
+             </div>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
        
       </body>
       
