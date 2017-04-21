@@ -14,6 +14,7 @@ html.body {
 body {
     background: url('../image1.jpeg') no-repeat fixed;
     background-size: cover;
+    margin: 0;
 }
 
 .main_section {

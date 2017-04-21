@@ -47,6 +47,9 @@
 <!DOCTYPE html>
  <html>
  <head>
+     <script src={{asset("bootstrap/js/jquery-3.2.0.min.js")}}></script>
+           
+                <script src={{asset("bootstrap/js/bootstrap.min.js")}}></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -58,7 +61,7 @@
          
  @include('menu')
         
-         
+         <button type="button" onclick="change()" class="btn btn-default">Change background</button>
          <header> </header>
          <div class="row">
           
@@ -74,9 +77,31 @@
            <div class="col-sm-2"></div>
            
              </div>
+         
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    
+    <script>
+         var zmienna=0;
+function change(){
+//    $("button").click(function(){
+      
+        if (zmienna ===0)
+        {
+             $('body').css('background', 'url("../nr2.jpeg") no-repeat fixed')
+             $('body').css('background-size', 'cover')
+             zmienna=1;
+        }
+        else
+        {
+             $('body').css('background', 'url("../image1.jpeg") no-repeat fixed')
+             $('body').css('background-size', 'cover')
+             zmienna =0;
+         }
+ //   });
+ };
+</script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
